@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-body {
-  background-color: #363636;
-}
-
 .container {
   display: flex;
   position: static;
@@ -19,6 +15,7 @@ header {
   align-items: center;
   width: 100%;
   border-bottom: 3px solid #0099cc;
+  box-sizing: border-box;
 }
 .logo {
   padding-left: 1%;
@@ -34,7 +31,18 @@ header {
   color: rgb(255, 255, 255);
   font-size: 130%;
 }
-
+.menu{
+  display: none;
+  margin-left:80%;
+  background-color: #0099cc;
+  width: 20%;
+  text-align: center;
+  padding-top:7%;
+}
+.menu:hover {
+  background-color: #000000;
+  cursor: pointer;
+}
 nav {
   width: 100%;
   background-color: #181818;
@@ -62,7 +70,7 @@ nav ul a {
 }
 
 nav ul a li {
-  padding-top: 26px;
+  padding-top: 15%;
 }
 
 nav ul a:hover {
@@ -73,10 +81,8 @@ nav ul a:hover {
 
 .section {
   background-image: url(../img/cuidad-noche.jpg);
-  background-size: cover;
-  background-position-y: no-repeat;
+  background-size: contain;
   overflow: hidden;
-  
 }
 .fotoUsuario {
   width: 45%;
@@ -97,11 +103,12 @@ nav ul a:hover {
 }
 
 .presentacion {
-  font-family: 'Hind Madurai', sans-serif;
+  box-sizing: border-box;
+  font-family: "Hind Madurai", sans-serif;
   color: rgb(0, 0, 0);
   border-radius: 30px;
   padding: 5%;
-  margin:3%;
+  margin: 3%;
   background-color: rgba(252, 252, 252, 0.616);
   width: 65%;
   height: 100%;
@@ -115,43 +122,178 @@ nav ul a:hover {
 }
 
 /* desde aqui comienza el footer */
-.footer{
+.footer {
   background-color: rgb(0, 0, 0);
   width: 100%;
-  height:13%;
   position: absolute;
-  
-
+  box-sizing: border-box;
 }
-.redes  {
+.redes {
+  box-sizing: border-box;
   margin: 0 auto;
   width: 33%;
   text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
   border-bottom: 3px solid #fff;
-
 }
 .redes > a > i {
- color: #fff;
- margin-left: 5%;
- font-size: 180%;
- }
- 
- .redes > a > i:hover{
+  color: #fff;
+  margin-left: 5%;
+  font-size: 180%;
+}
+
+.redes > a > i:hover {
   transform: rotate(0deg) scale(1.184) skew(1deg) translate(0px);
   -webkit-transform: rotate(0deg) scale(1.184) skew(1deg) translate(0px);
   -moz-transform: rotate(0deg) scale(1.184) skew(1deg) translate(0px);
   -o-transform: rotate(0deg) scale(1.184) skew(1deg) translate(0px);
   -ms-transform: rotate(0deg) scale(1.184) skew(1deg) translate(0px);
-  color: rgb(0, 17, 255)
+  color: rgb(0, 17, 255);
 }
 .derechos {
   width: 100%;
-  text-align: right;
+  text-align: center;
   padding-top: 2%;
+  background-color: rgb(27, 27, 27);
   color: rgb(255, 255, 255);
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: "Hind Madurai", sans-serif;
   font-size: 80%;
-  
+  box-sizing: border-box;
 }
+
+@media screen and (max-width: 1280px) {
+  .fotoUsuario img {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    margin-left: 20%;
+    width: 35%;
+    float: left;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+  }
+  nav ul a li {
+    padding-top: 17%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fotoUsuario img {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    margin-left: 20%;
+    width: 40%;
+    float: left;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+  }
+  .presentacion {
+  
+    font-size: 120%;
+   
+  }
+
+  nav ul a li {
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 912px) {
+  .fotoUsuario img {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    margin-left: 20%;
+    width: 40%;
+    float: left;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    
+  }
+
+  .presentacion {
+    box-sizing: border-box;
+    font-family: "Hind Madurai", sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 5%;
+    margin: 3%;
+    background-color: rgba(252, 252, 252, 0.616);
+    width: 65%;
+    font-size: 113%;
+    position: relative;
+    float: right;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+  nav ul a li {
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .menu{
+    display: block;
+    padding-top: 10%;
+    width: 20%;
+    height: 100%;
+  }
+  nav {
+    width: 20%;
+    justify-content: flex-end;
+  
+  }
+  nav ul {
+    width: 100%;
+    display : none;
+    flex-direction: column; 
+   }
+  
+  .fotoUsuario {
+    width: 100%;
+  }
+
+  .fotoUsuario img {
+    position: relative;
+    margin-top: 2%;
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+  }
+  .presentacion {
+    margin-top:-5%;
+    box-sizing: border-box;
+    font-family: "Hind Madurai", sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    background-color: rgba(252, 252, 252, 0.616);
+    width: 93%;
+    font-size: 100%;
+    position: relative;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+}
+
+
