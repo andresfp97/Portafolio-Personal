@@ -52,14 +52,13 @@ nav {
   border-bottom: 3px solid #0099cc;
 }
 nav ul {
-  width: 100%;
   list-style: none;
 }
 
 nav ul a {
   display: table-cell;
   text-align: center;
-  height: 85px;
+  padding-bottom: 5%;
   width: 15%;
   color: rgb(255, 255, 255);
   transition: color 300ms;
@@ -205,6 +204,10 @@ nav ul a:hover {
   nav ul a li {
     padding-top: 20%;
   }
+
+  nav ul a {
+    padding-bottom: 6%;
+  }
 }
 @media screen and (max-width: 912px) {
   .fotoUsuario img {
@@ -248,21 +251,37 @@ nav ul a:hover {
 @media screen and (max-width: 768px) {
 
   .menu{
-    display: block;
-    padding-top: 10%;
-    width: 20%;
     height: 100%;
+    display: block;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 20%;
   }
   nav {
-    width: 20%;
-    justify-content: flex-end;
+    width: 100%;
   
   }
+
+  .lista{
+    width: 30%;
+
+  }
+
   nav ul {
-    width: 100%;
-    display : none;
+    background-color: rgba(0, 0, 0, 0.479);
+    margin-left:20%;
+    position: fixed;
+    display : flex;
     flex-direction: column; 
    }
+   nav ul a {
+     text-align: center;
+     width: 100%;
+   }
+   nav ul a li {
+     font-size: 86%;
+    padding: 8%;
+}
   
   .fotoUsuario {
     width: 100%;
